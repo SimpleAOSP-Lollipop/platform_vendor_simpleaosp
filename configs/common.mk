@@ -65,3 +65,6 @@ PRODUCT_COPY_FILES += \
 
 # Include bootanimation mk file
 -include vendor/simpleaosp/configs/bootanimation.mk
+
+# T-Mobile theme engine
+ include vendor/simpleaosp/configs/themes_common.mk
