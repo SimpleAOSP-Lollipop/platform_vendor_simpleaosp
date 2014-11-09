@@ -1,2 +1,5 @@
+# Audit daemon
+type auditd_log, file_type;
+
 # Themes
 +type theme_data_file, file_type, data_file_type;

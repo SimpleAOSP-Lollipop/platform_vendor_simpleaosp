@@ -7,6 +7,7 @@ BOARD_SEPOLICY_DIRS += \
     vendor/simpleaosp/sepolicy
 
 BOARD_SEPOLICY_UNION += \
+    auditd.te \
     app.te \
     bootanim.te \
     file_contexts \
