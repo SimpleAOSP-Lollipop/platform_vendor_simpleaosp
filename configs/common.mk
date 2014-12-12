@@ -60,8 +60,8 @@ PRODUCT_COPY_FILES += \
 # Backuptool support
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/addon.d/50-simpleaosp.sh:system/addon.d/50-simepleaosp.sh \
-    $(LOCAL_PATH)/bin/backuptool.functions:system/bin/backuptool.functions \
-    $(LOCAL_PATH)/bin/backuptool.sh:system/bin/backuptool.sh
+    $(LOCAL_PATH)/bin/backuptool.functions:install/bin/backuptool.functions \
+    $(LOCAL_PATH)/bin/backuptool.sh:install/bin/backuptool.sh
 
 # Include bootanimation mk file
 -include vendor/simpleaosp/configs/bootanimation.mk
