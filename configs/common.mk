@@ -25,6 +25,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.facelock.lively_timeout=2500 \
     ro.facelock.est_max_time=600 \
     ro.facelock.use_intro_anim=false \
+    net.tethering.noprovisioning=true \
     ro.delta.version=VERSION
 
 # Common overlays
