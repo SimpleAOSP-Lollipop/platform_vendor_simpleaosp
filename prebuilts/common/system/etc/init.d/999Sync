@@ -1,0 +1,3 @@
+#!/system/bin/sh
+# We have busybox so enable sync on boot.  Write all buffered filesystem blocks to disk.
+sync;
