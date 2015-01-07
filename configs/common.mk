@@ -8,6 +8,9 @@ LOCAL_PATH := vendor/simpleaosp/prebuilts/common/system
 export LD_LIBRARY_PATH := $(ANDROID_BUILD_TOP)/prebuilts/sm/lib
 export LIBRARY_PATH := $(ANDROID_BUILD_TOP)/prebuilts/sm/lib
 
+# Block based ota flag default to off to get old style ota zip back (To get back block based zip, just enable to true.)
+TARGET_USES_BLOCK_BASED_OTA := false
+
 # Common build prop overrides
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy \
