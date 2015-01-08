@@ -36,9 +36,7 @@ PRODUCT_PACKAGES += \
     libscreenrecorder \
     LockClock \
     ScreenRecorder \
-    ThemeChooser \
-    ThemesProvider \
-    Trebuchet
+    Launcher3
 
 # Telephony packages for only telephony devices
 ifneq ($(filter simpleaosp_hammerhead simpleaosp_mako simpleaosp_shamu,$(TARGET_PRODUCT)),)
