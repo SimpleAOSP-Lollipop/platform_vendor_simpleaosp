@@ -4,11 +4,7 @@ PRODUCT_BRAND ?= simpleaosp
 # Local path for prebuilts
 LOCAL_PATH := vendor/simpleaosp/prebuilts/common/system
 
-# Add extra libs for the compilers to use graphite flag optimizations before any packages get built
-export LD_LIBRARY_PATH := $(ANDROID_BUILD_TOP)/prebuilts/sm/lib
-export LIBRARY_PATH := $(ANDROID_BUILD_TOP)/prebuilts/sm/lib
-
-# Block based ota flag default to off to get old style ota zip back (To get back block based zip, just enable to true.)
+# Block based ota zip default to off
 TARGET_USES_BLOCK_BASED_OTA := false
 
 # Common build prop overrides
@@ -37,12 +33,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/simpleaosp/overlays/common
 
 # Common packages
 PRODUCT_PACKAGES += \
-    busybox \
     libscreenrecorder \
     LockClock \
     OpenDelta \
     ScreenRecorder \
-    static_busybox \
     Trebuchet
 
 # Telephony packages for only telephony devices
@@ -70,12 +64,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/addon.d/50-simpleaosp.sh:system/addon.d/50-simepleaosp.sh \
     $(LOCAL_PATH)/bin/backuptool.functions:system/bin/backuptool.functions \
     $(LOCAL_PATH)/bin/backuptool.sh:system/bin/backuptool.sh
-
-# Init.d support with run-parts of busybox and support for adb over network
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/bin/sysinit:system/bin/sysinit \
-    $(LOCAL_PATH)/etc/init.local.rc:root/init.simpleAOSP.rc \
-    $(LOCAL_PATH)/etc/init.d/999Sync:system/etc/init.d/999Sync
 
 # Include bootanimation mk file
 -include vendor/simpleaosp/configs/bootanimation.mk

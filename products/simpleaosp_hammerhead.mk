@@ -1,6 +1,3 @@
-# Local path for hammerhead prebuilts
-LOCAL_PATH := vendor/simpleaosp/prebuilts/hammerhead/system
-
 # Inherit AOSP device configuration for hammerhead
 $(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
 
