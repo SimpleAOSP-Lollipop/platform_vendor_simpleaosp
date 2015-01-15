@@ -2,6 +2,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Component name of the default wallpaper. This will be ImageWallpaper if not specified -->
     <string name="default_wallpaper_component" translatable="false">@null</string>
+
     <string-array name="config_locationProviderPackageNames" translatable="false">
         <!-- The standard AOSP fused location provider -->
         <item>com.android.location.fused</item>
@@ -10,6 +11,7 @@
         <!-- GMS Google provider -->
         <item>com.google.android.gms</item>
     </string-array>
+
     <!-- Defines the default set of global actions. Actions may still be disabled or hidden based
          on the current state of the device.
          Each item must be one of the following strings:
@@ -25,12 +27,11 @@
     <string-array translatable="false" name="config_globalActionsList">
         <item>power</item>
         <item>reboot</item>
-        <item>screenshot</item>
-        <item>screenrecord</item>
         <item>airplane</item>
         <item>silent</item>
         <item>users</item>
     </string-array>
+    
     <!-- Disable stock OTA components if installed -->
     <string-array name="config_disabledComponents" translatable="false">
         <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateActivity</item>
