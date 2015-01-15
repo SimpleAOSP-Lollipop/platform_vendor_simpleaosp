@@ -25,8 +25,8 @@
     <string-array translatable="false" name="config_globalActionsList">
         <item>power</item>
         <item>reboot</item>
-        <item>screenrecord</item>
         <item>screenshot</item>
+        <item>screenrecord</item>
         <item>airplane</item>
         <item>silent</item>
         <item>users</item>
