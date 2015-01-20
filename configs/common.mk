@@ -35,6 +35,8 @@ PRODUCT_PACKAGES += \
     libscreenrecorder \
     LockClock \
     ScreenRecorder \
+    ThemeChooser \
+    ThemesProvider \
     Trebuchet
 
 # Telephony packages for only telephony devices
@@ -63,8 +65,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/bin/backuptool.functions:install/bin/backuptool.functions \
     $(LOCAL_PATH)/bin/backuptool.sh:install/bin/backuptool.sh
 
-# Include bootanimation mk file
--include vendor/simpleaosp/configs/bootanimation.mk
+# Cyanogenmod specific permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/etc/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml \
+    $(LOCAL_PATH)/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml \
+    $(LOCAL_PATH)/etc/permissions/org.cyanogenmod.theme.xml:system/etc/permissions/org.cyanogenmod.theme.xml
 
-# T-Mobile theme engine
- include vendor/simpleaosp/configs/themes_common.mk
+# Include bootanimation mk file
+include vendor/simpleaosp/configs/bootanimation.mk
