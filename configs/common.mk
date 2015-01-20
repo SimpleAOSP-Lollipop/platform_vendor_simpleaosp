@@ -4,8 +4,8 @@ PRODUCT_BRAND ?= simpleaosp
 # Local path for prebuilts
 LOCAL_PATH := vendor/simpleaosp/prebuilts/common/system
 
-# Block based ota zip default to off
-TARGET_USES_BLOCK_BASED_OTA := false
+# Block based ota zip default to true (set to off to get pre lollipop zip format)
+TARGET_USES_BLOCK_BASED_OTA := true
 
 # Common build prop overrides
 PRODUCT_PROPERTY_OVERRIDES += \
