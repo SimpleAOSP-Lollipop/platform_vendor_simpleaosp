@@ -13,6 +13,7 @@ BOARD_SEPOLICY_UNION += \
     file_contexts \
     file.te \
     mediaserver.te \
+    seapp_contexts \
     service_contexts \
     system.te \
     zygote.te
