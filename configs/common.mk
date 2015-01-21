@@ -25,7 +25,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.facelock.est_max_time=600 \
     ro.facelock.use_intro_anim=false \
     net.tethering.noprovisioning=true \
-    persist.sys.dun.override=0
+    persist.sys.dun.override=0 \
+    ro.build.selinux=1
 
 # Common overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/simpleaosp/overlays/common
