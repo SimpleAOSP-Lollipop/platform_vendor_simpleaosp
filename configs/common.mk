@@ -68,3 +68,6 @@ include vendor/simpleaosp/configs/bootanimation.mk
 # Include extra items
 include vendor/simpleaosp/configs/extras.mk
 
+# Include system items
+include vendor/simpleaosp/configs/system.mk
+
