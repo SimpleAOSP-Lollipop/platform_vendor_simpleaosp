@@ -7,11 +7,5 @@ BOARD_SEPOLICY_DIRS += \
     vendor/simpleaosp/sepolicy
 
 BOARD_SEPOLICY_UNION += \
-    app.te \
-    bootanim.te \
     file_contexts \
-    file.te \
-    mediaserver.te \
-    service_contexts \
-    system.te \
-    zygote.te
+    service_contexts
