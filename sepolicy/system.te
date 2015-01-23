@@ -1,4 +1,3 @@
-# Wallpaper
 allow system_server wallpaper_file:file relabelto;
 
 # Themes
