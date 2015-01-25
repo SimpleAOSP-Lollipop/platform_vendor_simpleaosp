@@ -33,10 +33,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/simpleaosp/overlays/common
 
 # Common packages
 PRODUCT_PACKAGES += \
+    Launcher3 \
     libscreenrecorder \
     LockClock \
-    ScreenRecorder \
-    Launcher3
+    ScreenRecorder
 
 # Telephony packages for only telephony devices
 ifneq ($(filter simpleaosp_hammerhead simpleaosp_mako simpleaosp_shamu,$(TARGET_PRODUCT)),)
@@ -63,12 +63,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/addon.d/50-simpleaosp.sh:system/addon.d/50-simepleaosp.sh \
     $(LOCAL_PATH)/bin/backuptool.functions:install/bin/backuptool.functions \
     $(LOCAL_PATH)/bin/backuptool.sh:install/bin/backuptool.sh
-
-# Cyanogenmod specific permissions
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/etc/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml \
-    $(LOCAL_PATH)/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml \
-    $(LOCAL_PATH)/etc/permissions/org.cyanogenmod.theme.xml:system/etc/permissions/org.cyanogenmod.theme.xml
 
 # Include bootanimation mk file
 include vendor/simpleaosp/configs/bootanimation.mk
