@@ -10,8 +10,9 @@ BOARD_SEPOLICY_UNION += \
     auditd.te \
     app.te \
     bootanim.te \
-    file_contexts \
     file.te \
+    file_contexts \
+    mac_permissions.xml \
     mediaserver.te \
     seapp_contexts \
     service_contexts \
