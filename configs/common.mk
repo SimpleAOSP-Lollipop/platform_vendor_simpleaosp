@@ -69,7 +69,6 @@ PRODUCT_COPY_FILES += \
 # Cyanogenmod specific permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/etc/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml \
-    $(LOCAL_PATH)/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml \
     $(LOCAL_PATH)/etc/permissions/org.cyanogenmod.theme.xml:system/etc/permissions/org.cyanogenmod.theme.xml
 
 # Include bootanimation mk file
@@ -77,4 +76,3 @@ include vendor/simpleaosp/configs/bootanimation.mk
 
 # Include extra items
 include vendor/simpleaosp/configs/extras.mk
-
