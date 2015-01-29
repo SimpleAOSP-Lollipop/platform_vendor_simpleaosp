@@ -40,9 +40,7 @@ PRODUCT_PACKAGES += \
 
 # Telephony packages for only telephony devices
 ifneq ($(filter simpleaosp_hammerhead simpleaosp_mako simpleaosp_shamu,$(TARGET_PRODUCT)),)
-PRODUCT_PACKAGES += \
-    CellBroadcastReceiver \
-    Stk
+PRODUCT_PACKAGES += Stk
 endif
 
 # Proprietary keyboard lib needed for swyping
