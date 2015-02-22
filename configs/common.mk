@@ -41,7 +41,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.facelock.use_intro_anim=false \
     net.tethering.noprovisioning=true \
     persist.sys.dun.override=0 \
-    ro.build.selinux=1
+    ro.build.selinux=1 \
     ro.delta.version=VERSION
 
 # Common overlays
@@ -107,4 +107,3 @@ endif
 ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
 include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
 endif
-
