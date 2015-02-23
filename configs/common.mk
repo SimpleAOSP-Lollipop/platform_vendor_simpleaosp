@@ -60,6 +60,11 @@ ifneq ($(filter simpleaosp_hammerhead simpleaosp_mako simpleaosp_shamu,$(TARGET_
 PRODUCT_PACKAGES += Stk
 endif
 
+# Layers theme
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/app/Layers/Layers.apk:system/app/Layers/Layers.apk \
+    $(LOCAL_PATH)/etc/permissions/com.layers.theme.xml:system/etc/permissions/com.layers.theme.xml
+
 # Proprietary keyboard lib needed for swyping
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/lib/libjni_latinime.so:system/lib/libjni_latinime.so
@@ -78,9 +83,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/addon.d/50-simpleaosp.sh:system/addon.d/50-simepleaosp.sh \
     $(LOCAL_PATH)/bin/backuptool.functions:install/bin/backuptool.functions \
     $(LOCAL_PATH)/bin/backuptool.sh:install/bin/backuptool.sh
-
-# Include system items
-include vendor/simpleaosp/configs/system.mk
 
 # Get the right bootanimation for each device
 ifneq ($(filter simpleaosp_flo,$(TARGET_PRODUCT)),)
