@@ -1,0 +1,2 @@
+# Audit daemon
+type auditd_log, file_type, data_file_type;
