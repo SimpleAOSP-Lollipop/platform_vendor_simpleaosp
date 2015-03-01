@@ -101,6 +101,10 @@ ifneq ($(filter simpleaosp_mako,$(TARGET_PRODUCT)),)
 PRODUCT_BOOTANIMATION := $(LOCAL_PATH)/media/mako-bootanimation.zip
 endif
 
+ifneq ($(filter simpleaosp_manta,$(TARGET_PRODUCT)),)
+PRODUCT_BOOTANIMATION := $(LOCAL_PATH)/media/manta-bootanimation.zip
+endif
+
 ifneq ($(filter simpleaosp_shamu,$(TARGET_PRODUCT)),)
 PRODUCT_BOOTANIMATION := $(LOCAL_PATH)/media/shamu-bootanimation.zip
 endif
