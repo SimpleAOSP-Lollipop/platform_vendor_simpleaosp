@@ -25,7 +25,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/simpleaosp/overlays/common
 
 # Needed Packages
-PRODUCT_PACKAGES += Launcher3
+PRODUCT_PACKAGES += \
+LockClock \
+Launcher3
 
 # Proprietary latinime lib needed for swyping
 PRODUCT_COPY_FILES += \
