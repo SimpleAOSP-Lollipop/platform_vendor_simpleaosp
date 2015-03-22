@@ -27,7 +27,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/simpleaosp/overlays/common
 # Needed Packages
 PRODUCT_PACKAGES += \
 LockClock \
-Launcher3
+Launcher3 \
+ScreenRecorder \
+libscreenrecorder
 
 # Proprietary latinime lib needed for swyping
 PRODUCT_COPY_FILES += \
