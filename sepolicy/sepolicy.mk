@@ -6,6 +6,8 @@
 BOARD_SEPOLICY_DIRS += \
     vendor/simpleaosp/sepolicy
 
-BOARD_SEPOLICY_UNION += service_contexts
+BOARD_SEPOLICY_UNION += \
+service_contexts \
+system.te
   
 
