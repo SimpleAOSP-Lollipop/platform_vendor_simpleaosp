@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for mako
-$(call inherit-product, device/moto/shamu/full_shamu.mk)
+$(call inherit-product, device/moto/shamu/aosp_shamu.mk)
 
 # Inherit common product files
 $(call inherit-product, vendor/simpleaosp/configs/common.mk)
